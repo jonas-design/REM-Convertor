@@ -126,4 +126,10 @@ body {
 .copyright a:hover {
   opacity: 0.5;
 }
+
+#copy {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
 /*# sourceMappingURL=style.css.map */
