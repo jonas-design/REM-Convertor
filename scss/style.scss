@@ -1,0 +1,135 @@
+$accentColor: #fded07;
+$background: #222;
+$background-light: #292929;
+$background-lighter: #333333;
+$textColor: #cccc;
+$textColorDark: #585858;
+$white: #f9f9f9;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: $background;
+  color: $white;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  background: $background-light;
+  width: 50%;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  border-radius: 0.9375rem;
+
+  .title {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  p {
+    color: $textColor;
+    margin: 1rem 0;
+    width: 25rem;
+    text-align: left;
+  }
+
+  .input-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border-radius: 0.9375rem;
+      margin: 0.5rem 0;
+      width: 20rem;
+    }
+
+    .change {
+      width: 3.9rem;
+      height: 3.9rem;
+      border-radius: 1rem;
+      border: none;
+      outline: none;
+      background-color: $accentColor;
+      cursor: pointer;
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        .icon-loop2 {
+          transition: all 500ms ease-in-out;
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+  }
+
+  .result-area {
+    background-color: $background-lighter;
+    margin-top: 1.5rem;
+    width: 25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    .result {
+      color: $accentColor;
+    }
+  }
+
+  .value-lable {
+    margin-left: 1rem;
+  }
+}
+
+.copyright {
+  margin: -3.2rem auto;
+  color: $textColorDark;
+  font-size: 0.875rem;
+  background-color: $background-light;
+  width: 16rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+
+  span {
+    color: $accentColor;
+  }
+
+  a {
+    text-decoration: none;
+    color: $accentColor;
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
